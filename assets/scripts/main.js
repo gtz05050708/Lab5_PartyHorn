@@ -74,7 +74,7 @@ function changeImgAudio(radio) {
 }
 
 var form = document.getElementById("party-horn-form");
-form.addEventListener('submit'. stopSubmit);
+form.addEventListener('submit', stopSubmit);
 function stopSubmit(event) {
     hornSound.volume = number.value/100;
     hornSound.play();
