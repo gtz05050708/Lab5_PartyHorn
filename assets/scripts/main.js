@@ -1,5 +1,7 @@
 // main.js
 // number and slider as well as volume icon
+
+
 var hornSound = document.getElementById("horn-sound");
 var hornButton = document.getElementById("honk-btn");
 var slider = document.getElementById("volume-slider");
@@ -71,10 +73,10 @@ function changeImgAudio(radio) {
     }
 }
 
-// sound the horn when button is pressed
-hornButton.addEventListener("submit", Honhon);
-function Honhon(event) {
-    event.preventDefault();
+var form = document.getElementById("party-horn-form");
+form.addEventListener('submit'. stopSubmit);
+function stopSubmit(event) {
     hornSound.volume = number.value/100;
     hornSound.play();
- }
+    event.preventDefault();
+};
