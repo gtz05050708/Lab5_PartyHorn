@@ -73,7 +73,8 @@ function changeImgAudio(radio) {
 
 // sound the horn when button is pressed
 hornButton.addEventListener("submit", Honhon);
-function Honhon() {
+function Honhon(event) {
+    event.preventDefault();
     hornSound.volume = number.value/100;
     hornSound.play();
  }
